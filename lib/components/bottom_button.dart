@@ -10,7 +10,12 @@ class BottomButton extends StatelessWidget {
     return GestureDetector(
       onTap: onPressed,
       child: Container(
-          child: Text(label),
+          child: Center(
+            child: Text(
+              label,
+              style: TextStyle(fontWeight:FontWeight.bold,fontSize: 25),
+            ),
+          ),
           color: bottomBarColor,
           margin: EdgeInsets.only(top: 10.0),
           height: bottomBarHeight,

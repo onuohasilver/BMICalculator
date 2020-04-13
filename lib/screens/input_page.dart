@@ -201,10 +201,12 @@ class _BmiCalculatorState extends State<BmiCalculator> {
             label: 'CALCULATE',
             onPressed: () {
               Calculator calc = Calculator(height: height, weight: weight);
+              print(height);
               Navigator.push(
                 context,
                 MaterialPageRoute(
                   builder: (context) => ResultPage(
+
                      bmiValue: calc.calculateBMI(),
                     bmiResult: calc.getResult(),
                    

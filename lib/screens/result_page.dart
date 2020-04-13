@@ -34,7 +34,7 @@ class ResultPage extends StatelessWidget {
               cardChild: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
-                  Text(bmiResult, style: kMiniTitleStyle),
+                  Text(bmiResult, style: kMiniTitleStyle,textAlign: TextAlign.center),
                   Text(bmiValue, style: kNumberStyleL),
                   Text(
                     interpretation,
