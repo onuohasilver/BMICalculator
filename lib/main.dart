@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'input_page.dart';
+import 'package:bmi_calculator/screens/input_page.dart';
+import 'package:bmi_calculator/screens/result_page.dart';
 
 void main() {
   runApp(
@@ -10,6 +11,13 @@ void main() {
             textTheme: TextTheme(
               body1: TextStyle(color: Colors.white),
             )),
-        home: BmiCalculator()),
+        initialRoute: '/',
+        routes:{
+          '/':(context)=>BmiCalculator(),
+          'result':(context)=>ResultPage(),
+
+        }
+        ),
+        
   );
 }
